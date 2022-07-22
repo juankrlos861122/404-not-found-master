@@ -44,3 +44,4 @@ This application/site was created as a submission to a [DevChallenges/responsive
 
 - GitHub [@juankrlos861122](https://github.com/juankrlos861122)
 - Twitter [@juancmartinez86](https://twitter.com/juancmartinez86)
+- devChangelles [@juankrlos861122](https://devchallenges.io/portfolio/juankrlos861122)
