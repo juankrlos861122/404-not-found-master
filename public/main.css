@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@700&family=Space+Mono:wght@400;700&family=Montserrat:wght@500;700&display=swap');
+
+:root {
+    --font-Inconsolata: 'Inconsolata', monospace;
+    --font-Space-Mono: 'Space Mono', monospace;
+    --font-Montserrat: 'Montserrat', monospace;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    box-sizing: border-box;
+}
+
+main {
+    display: grid;
+    grid-auto-flow: row;
+    grid-template-columns: minmax(375px, 768px);
+    grid-template-rows: auto;
+
+    position: absolute;
+    height: 100%;
+}
+
+main>h3 {
+    margin: 64px 24px;
+    margin-block-start: 20px;
+    align-items: center;
+
+    font-family: var(--font-Inconsolata);
+    font-weight: bold;
+    font-size: 2.4rem;
+    line-height: 25px;
+    letter-spacing: -0.08em;
+    color: #333333;
+}
+
+.section-image {
+    width: 100%;
+    min-width: 375px;
+    text-align: center;
+    margin-block-end: 70px;
+}
+
+.section-image img {
+    width: 90%;
+}
+
+.section-text {
+    width: 90%;
+    min-width: 375px;
+    margin: 0 auto;
+}
+
+.section-text>h1 {
+    width: 100%;
+    margin: 0 auto;
+    margin-block-end: 30px;
+
+    font-family: var(--font-Space-Mono);
+    font-weight: bold;
+    font-size: 4.8rem;
+    line-height: 71px;
+    letter-spacing: -0.035em;
+    color: #333333;
+}
+
+.section-text>p {
+    width: 100%;
+    margin: 0 auto;
+    margin-block-end: 66px;
+
+    font-family: var(--font-Space-Mono);
+    font-weight: 400;
+    font-size: 1.8rem;
+    line-height: 27px;
+    letter-spacing: -0.035em;
+    color: #4f4f4f;
+}
+
+.section-text>a {
+    display: flex;
+    width: 216px;
+    height: 68px;
+    margin-block-end: 114px;
+    justify-content: center;
+    align-items: center;
+
+    font-family: var(--font-Space-Mono);
+    font-weight: bold;
+    font-size: 1.4rem;
+    line-height: 21px;
+    letter-spacing: -0.035em;
+
+    background-color: #333333;
+    color: white;
+    text-decoration: none;
+}
+
+footer {
+    display: flex;
+    position: relative;
+    bottom: 0px;
+    justify-content: center;
+    align-items: center;
+
+    width: 100%;
+    min-width: 375px;
+    text-align: center;
+    padding: 24px 0px;
+
+    font-family: var(--font-Montserrat);
+    font-weight: 500;
+    font-size: 1.4rem;
+    line-height: 17px;
+
+    color: #BDBDBD;
+}
+
+footer>a {
+    text-decoration: none;
+    font-weight: bold;
+    color: #BDBDBD;
+}
+
+@media (min-width: 768px) {
+    main {
+        max-width: 1440px;
+        align-items: center;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto;
+    }   
+    main>h3{
+        grid-column: 1 / 3;
+    }
+
+    footer {
+        grid-column: 1 / 3;
+    }
+}
